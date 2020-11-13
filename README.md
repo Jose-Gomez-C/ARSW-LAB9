@@ -36,8 +36,23 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 ![](images/part3/part3-test-function.png)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
+> **En Postman realizamos la respectiva configuración para la colección y el ambiente en el que lo íbamos a probar. Las pruebas que realizaremos son con Fibonacci de 1000000 respectivamente**
+* **Fibonacci Collection**
+![Collection](https://i.ibb.co/xMRq71Q/coleccion.png)
+* **Fibonacci Environment**
+![Ambiente](https://i.ibb.co/34Lt2x9/ambiente.png)
+ 
+Por medio de Application Insights podemos medir el rendimiento, el promedio del procesador y procesos de la CPU, el tiempo de respuesta del servidor, el promedio de la memoria disponible junto con la duración de la request con respecto a la ejecución concurrente de las 10 pruebas en distintos clientes  
+![c1](https://i.ibb.co/WzvxMrL/C1.png)
+![c2](https://i.ibb.co/tHYLHZR/C2.png)
+![c3](https://i.ibb.co/KsRJM9L/C3.png)
+![c4](https://i.ibb.co/s9F2xkp/C4.png)
+![c5](https://i.ibb.co/Y0jSmyV/C5.png)
+![c6](https://i.ibb.co/yW91TG3/C6.png)
 
-6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
+### Conclusiones
+* ***Se logro por medio de la configuración de la aplicación, sin servidor, responder a todas las peticiones y de esta manera pasar las pruebar.***
+* ***Se cumplio con el objetivo de la escalabilidad, gracias a la implementación serverless y todos los beneficios que trae esta.***
 
 **Preguntas**
 
@@ -61,3 +76,5 @@ Debido a que el plan que utilizamos nos ofrece 1.5G las cuales en algunos casos 
 * ¿Cómo funciona el sistema de facturación de las Function App?
 Se factura según el consumo de recursos y la ejecuciones por segundos. Los precios del plan de consumo incluyen 1 millones de solicitudes y 400.000 GB-segundos de consumo de recursos gratuitos al mes. Functions se factura según el consumo de recursos medido en GB-s. El consumo de recursos se calcula multiplicando el tamaño medio de memoria en GB por el tiempo en milisegundos que dura la ejecución de la función. La memoria que una función utiliza se mide redondeando a los 128 MB más cercanos hasta un tamaño de memoria máximo de 1.536 MB, y el tiempo de ejecución se redondea a los 1 ms más cercanos. Para la ejecución de una única función, el tiempo de ejecución mínimo es de 100 ms y la memoria mínima es de 128 MB, respectivamente.
 * Informe
+
+

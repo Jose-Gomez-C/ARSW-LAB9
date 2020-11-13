@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FibonacciTest",
+		"_postman_id": "93915a52-55ec-cc2c-7b9a-57677c9140f4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://{{URL}}/api/Fibonacci",
+			"request": {
+				"url": "https://{{URL}}/api/Fibonacci",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nth\": 1000000\n\t\n}"
+				},
+				"description": "Fibonacci Test"
+			},
+			"response": []
+		}
+	]
+}

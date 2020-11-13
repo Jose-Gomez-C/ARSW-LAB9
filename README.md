@@ -54,7 +54,7 @@ Por medio de Application Insights podemos medir el rendimiento, el promedio del 
 * ***Se logro por medio de la configuración de la aplicación, sin servidor, responder a todas las peticiones y de esta manera pasar las pruebar.***
 * ***Se cumplio con el objetivo de la escalabilidad, gracias a la implementación serverless y todos los beneficios que trae esta.***
 
-**Preguntas**
+### Preguntas
 
 * ¿Qué es un Azure Function?
 Es una solución la cual nos permite ejecutar de forma muy sencilla pequeños fragmentos de códigos lo cual facilita tener una aplicación en la nube sin preocuparnos de la infraestructura. Una de las mejores cualidades de esto es que podemos codificar en el portal de Azure esto nos ayuda a que si no tenemos un buen computador podamos realizar aplicaciones si esa limitación. Se basa en escala y baja demanda por lo cual solo se paga por lo consumido, esto quiere decir que se factura por el numero de peticiones ejecutadas. Para demostrar el poder de esta tecnología el primer millón de peticiones en un mes será gratis.
@@ -77,4 +77,6 @@ Debido a que el plan que utilizamos nos ofrece 1.5G las cuales en algunos casos 
 Se factura según el consumo de recursos y la ejecuciones por segundos. Los precios del plan de consumo incluyen 1 millones de solicitudes y 400.000 GB-segundos de consumo de recursos gratuitos al mes. Functions se factura según el consumo de recursos medido en GB-s. El consumo de recursos se calcula multiplicando el tamaño medio de memoria en GB por el tiempo en milisegundos que dura la ejecución de la función. La memoria que una función utiliza se mide redondeando a los 128 MB más cercanos hasta un tamaño de memoria máximo de 1.536 MB, y el tiempo de ejecución se redondea a los 1 ms más cercanos. Para la ejecución de una única función, el tiempo de ejecución mínimo es de 100 ms y la memoria mínima es de 128 MB, respectivamente.
 * Informe
 
-
+# Autores 
+* Jose Luis Gomez Camacho 
+* Brayan Felipe Rojas Bernal
